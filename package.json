@@ -7,8 +7,8 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-   "build" : "npm install --prefix Backend && npm install --prefix Frontend && npm run build --prefix Frontend",
-    "start": "npm run start --prefix Backend"
+    "build": "npm ci --prefix Backend && npm ci --prefix frontend && npm run build --prefix frontend",
+    "start": "node Backend/src/server.js"
   },
   "repository": {
     "type": "git",
